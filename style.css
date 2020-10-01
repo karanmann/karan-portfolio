@@ -1,0 +1,21 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-container {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/andrew-neel-cckf4TsHAuw-unsplash.jpg");
+height: 80%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex
+}
+.profile-pic img{
+  width: 200px;
+  border-radius: 200px;
+}
+.hero-text {
+text-align: left;
+color: white;
+}
