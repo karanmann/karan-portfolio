@@ -2,6 +2,7 @@ body, html {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  backdrop-filter: blur(9px);
 
 }
 
@@ -11,9 +12,10 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./images/the-creative-exchange-d2zvqp3fpro-unsplash.jpg);
+  background-image: url(./images/kelli-tungay-PxiS1PBDuGo-unsplash.jpg);
   background-size: cover;
-  height: 120vh;
+  backdrop-filter: blur(9px);
+  height: 100vh;
   padding-top: 40px;
 }
 
@@ -46,6 +48,7 @@ margin-top: 20px;
 }
 
 .social-links img {
+  padding: 0 20px;
   width: 40px;
 }
 .social-links img:hover {
