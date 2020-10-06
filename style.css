@@ -1,11 +1,11 @@
 body, html {
-  height: 10%;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 
 }
 
+/* all content for hero */
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -13,78 +13,146 @@ body, html {
   align-items: center;
   background-image: url(./images/the-creative-exchange-d2zvqp3fpro-unsplash.jpg);
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
 }
 
 .hero-text {
   list-style-type: none;
 }
+.myname {
+  font-size: 40px;
+}
+.myname p{
+  font-size: 40px;
+  letter-spacing: 5px;
 
-.hero-contact ul li img{
+}
+.previous-job-title {
+  font-size: 40px;
+}
+
+.job-title{
+font-size: 40px;
+}
+.profile-pic {
 width: 40vh;
 border-radius: 200px;
 margin-top: 20px;
-
-}.hero-contact ul {
-  list-style-type: none;
-  padding: 10px
 }
+
+.social-links img {
+  width: 40px;
+}
+.social-links img:hover {
+  width: 60px;
+}
+.hero-contact ul {
+  list-style-type: none;
+  padding: 10px 0px
+}
+
 
 .hero-contact li a, .hero-contact li  {
   text-decoration: none;
   font-size: 30px;
-
 }
 
 /* CONTENT */
+
+
+/* common styles */
 .tech, .feature-projects, .my-thought-about-code, .skills, .for-more {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
 }
 
-.section-titles{
-  background-color: red;
-  color: white;
-  width: 200px;
-  align-items: center;
 
-}
+/* introduction text */
 .introduction-text {
   background-color: rgba(196, 196, 196, 0.2);
   padding : 20px 0px
 }
+
+/* tech */
 .tech{
   padding : 20px 0px
 }
+
+.tech h2 {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin : 0 40vw;
+}
+.tech-content{
+  word-spacing: 10px;
+  font-size: 25px;
+}
+
+/* featured projects */
 .feature-projects{
   background-color: rgba(196, 196, 196, 0.2);
   padding : 20px 0px
 }
+
+/* my thought about code */
 .my-thought-about-code{
  padding: 20px 0px;
 }
+
+/* my skills */
 .skills {
   background-color: rgba(196, 196, 196, 0.2);
   list-style-type: none;
   padding : 20px 0px
 }
+
+/* for more */
 .for-more{
-  padding : 20px 0px
+  padding : 10px 0px;
 }
+.for-more img {
+  width : 50px;
+  padding: 3vh 7vw;
+  
+}
+.for-more img:hover {
+  width: 70px;
+}
+
+/* footer */
 footer {
   background-color: blue;
   color: white;
   padding : 20px 0px
 }
 
+/* all media queries */
 @media (min-width: 900px) {
   .hero-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .hero-text {
-    padding-right: 30%;
+
+  .hero-container {
+    padding-left: 300px;
+    height: 70vh;
   }
- 
+
+  .hero-text {
+    text-align:  left;
+  }
+
+  .hero-contact {
+    padding-left: 150px;
+  }
+
+  .for-more{
+    display: flex;
+    padding : 40px 0px;
+  }
+
 }
