@@ -12,7 +12,7 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./images/backgrounds/aaron-burden-rsGPpnuLEc4-unsplash.jpg);
+  background-image: url(./images/backgrounds/martin-jernberg-qie9wa-YLK8-unsplash.jpg);
   z-index:0;
   background-size: cover;
   backdrop-filter: blur(9px);
@@ -23,29 +23,29 @@ body, html {
 .hero-text {
   list-style-type: none;
 }
+
 .my-name {
   font-family: 'Roboto', sans-serif;
   font-size: 50px;
   letter-spacing: 5px;
+  color: white;
   
 }
 .portfolio {
   border-bottom: 3px solid red;
   font-size: 40px;
+  color: blanchedalmond;
 
 }
 
-.myname p{
-  font-size: 40px;
-  color: #92bfb1;
-
-}
 .previous-job-title {
   font-size: 40px;
+  color: whitesmoke;
 }
 
 .job-title{
   font-size: 40px;
+  color: blanchedalmond;
 }
 .profile-pic {
   width: 40vh;
@@ -94,6 +94,7 @@ body, html {
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
+  border-radius: 7px;
   
 }
 
@@ -127,11 +128,16 @@ body, html {
 
 .my-projects{
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .my-projects img {
   height: 180px;
+}
+.my-projects h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
 }
 
 /* my thought about code */
@@ -146,11 +152,17 @@ body, html {
 .skills {
   background-color: rgba(196, 196, 196, 0.2);
   list-style-type: none;
-  padding : 20px 0px
+  padding : 20px 0px;
 }
 
 .skills h2 {
   margin: 0 30vw;
+}
+.divided-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* for more */
@@ -168,11 +180,17 @@ body, html {
 .for-more img:hover {
   width: 70px;
 }
+.divided-skills h3 {
+
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif
+
+}
 
 /* footer */
 footer {
-  background-color: blue;
-  color: white;
+  background-color: rgb(8, 70, 106);
+  color: whitesmoke;
   padding : 20px 0px
 }
 
@@ -194,6 +212,9 @@ footer {
   .for-more h2 {
     margin: 0 40vw;
   }
+  .divided-skills {
+    display: flex;
+    flex-direction: row;
 }
 @media (min-width: 1100px) {
   .hero-container {
@@ -234,5 +255,8 @@ footer {
   .for-more h2 {
     margin: 0 43vw;
   }
+  .my-projects{
+    display: flex;
+    flex-direction: row;
 
 }
