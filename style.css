@@ -2,8 +2,6 @@ body, html {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  backdrop-filter: blur(9px);
-
 }
 
 /* all content for hero */
@@ -13,10 +11,9 @@ body, html {
   justify-content: center;
   align-items: center;
   background-image: url(./images/backgrounds/martin-jernberg-qie9wa-YLK8-unsplash.jpg);
-  z-index:0;
   background-size: cover;
   backdrop-filter: blur(9px);
-  height: 120vh;
+  height: 100vh;
   padding-top: 40px;
 }
 
@@ -48,9 +45,10 @@ body, html {
   color: blanchedalmond;
 }
 .profile-pic {
-  width: 40vh;
+  width: 30vh;
   border-radius: 200px;
   margin-top: 20px;
+  border: 3px solid white;
 }
 
 .social-links img {
@@ -116,7 +114,24 @@ body, html {
   word-spacing: 10px;
   font-size: 25px;
 }
+.git-link {
+  color: red;
+}
 
+.project-tech {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 9px;
+}
+
+.project-tech div {
+  margin: 3px;
+  padding: 2px 2px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #7dd1e0;
+  align-self: center;
+}
 /* featured projects */
 .feature-projects{
   background-color: rgba(196, 196, 196, 0.2);
@@ -173,18 +188,19 @@ body, html {
 .for-more h2 {
   margin: 0 25vw;
 }
+
 .for-more img {
   width : 50px;
   padding: 3vh 7vw;
 }
+
 .for-more img:hover {
   width: 70px;
 }
-.divided-skills h3 {
 
+.divided-skills h3 {
   font-size: 20px;
   font-family: 'Roboto', sans-serif
-
 }
 
 /* footer */
@@ -197,6 +213,13 @@ footer {
 /* all media queries */
 
 @media (min-width: 700px) {
+  .portfolio{
+    padding-top: 50px;
+  }
+  .hero-container {
+  height: 110vh;
+  padding-top: 40px;
+  }
   .tech h2 {
     margin : 0 40vw;
   }
@@ -215,19 +238,23 @@ footer {
   .divided-skills {
     display: flex;
     flex-direction: row;
+  }
+  .profile-pic {
+    border-radius: 300px;
+    margin-top: 40px;
+  }
 }
 @media (min-width: 1100px) {
   .hero-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-  }
-
-  .hero-container {
-    padding-left: 300px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     height: 70vh;
+    padding-top: 0;
+    text-align: left;
   }
-
+ 
   .hero-text {
     text-align:  left;
   }
@@ -240,23 +267,29 @@ footer {
     display: flex;
     padding : 40px 0px;
   }
+
   .tech h2 {
     margin : 0 45vw;
   }
+
   .feature-projects h2 {
     margin: 0 37vw
   }
+
   .my-thought-about-code h2 {
     margin: 0 33vw
   }
+
   .skills h2 {
     margin: 0 45vw;
   }
+
   .for-more h2 {
     margin: 0 43vw;
   }
+
   .my-projects{
     display: flex;
     flex-direction: row;
-
+  }
 }
