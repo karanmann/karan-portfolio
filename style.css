@@ -191,6 +191,9 @@ body, html {
 .my-thought-about-code{
  padding: 20px 0px;
 }
+.external-links {
+  padding-top: 20px;
+}
 
 .my-thought-about-code h2 {
   margin: 0 5vw
