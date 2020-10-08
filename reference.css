@@ -5,3 +5,9 @@
 .for-more h2
 
 margin : 0 40vw;
+
+background-image: linear-gradient(
+  rgba(53, 52, 52, 0.5),
+  rgba(255, 255, 255, 0.5)
+),
+url("./assets/90137.jpg");
