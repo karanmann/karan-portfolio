@@ -277,6 +277,10 @@ body, html {
   margin-top: 30px
 }
 
+.icon-more-link p {
+  font-size: 15px;
+}
+
 .for-more img:hover {
   width: 60px;
   border: 4px solid rgb(8, 70, 106);
@@ -321,7 +325,7 @@ footer {
   }
 
   .tech h2 {
-    margin : 0 40vw;
+    margin : 0 35vw;
   }
 
   .feature-projects h2 {
