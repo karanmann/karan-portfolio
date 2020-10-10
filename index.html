@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Portfolio, Frontend, Web design, Developer">
+  <meta name="author" content="Karan Mann">
   <title>Karan Mann - Portfolio</title>
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -15,18 +17,22 @@
     <!-- HERO -->
     <div class="hero-container">
       <div class="hero-text">
-        <p class="portfolio">PORTFOLIO: <span class="my-name">KARAN MANN</span> </p>
-        <p class="job-title">frontend developer</p>
-        <p class="previous-job-title">+ chef</p>
+        <p class="portfolio" tabindex="0">PORTFOLIO: <span class="my-name">KARAN MANN</span> </p>
+        <p class="job-title" tabindex="0">frontend developer</p>
+        <p class="previous-job-title" tabindex="0">+ chef</p>
       </div>
       <div class="hero-contact">
         <ul>
           <li class="social-links">
             <a href="https://www.linkedin.com/in/karanmann84/"><img src="./images/icons/linkedin.svg"
-                alt="Icon Link to LinkedIN"></a>
-            <a href="https://github.com/karanmann"><img src="./images/icons/github.svg" alt="Icon Link to Github"></a>
-            <a href="https://stackoverflow.com/users/14064949/karan-mann"><img src="./images/icons/stackoverflow.svg"
-                alt="Icon Link to Stackoverflow"></a>
+                alt="Icon Link to LinkedIN" tabindex="0" role="button" aria-pressed="false"
+                aria-label="Linkedin profile" target="_blank" rel="noreferrer"></a>
+            <a href="https://github.com/karanmann" tabindex="0" role="button" aria-pressed="false"
+              aria-label="Github profile" target="_blank" rel="noreferrer"><img src="./images/icons/github.svg"
+                alt="Icon Link to Github"></a>
+            <a href="https://stackoverflow.com/users/14064949/karan-mann" tabindex="0" role="button"
+              aria-pressed="false" aria-label="Stackoverflow" target="_blank" rel="noreferrer"><img
+                src="./images/icons/stackoverflow.svg" alt="Icon Link to Stackoverflow"></a>
           </li>
           <li><img class="profile-pic" src="./images/Profile.jpg" alt="Karan's Picture"></li>
         </ul>
@@ -35,31 +41,37 @@
   </header>
   <main>
     <!-- introduction-text -->
-    <div class="introduction-text">
-      <p><img src="./images/icons/icon-p.svg" alt="Lolypop Icon"> "Hello! I am a chef turned junior frontend developer
+    <div class="introduction-text" tabindex="0">
+      <p tabindex="0"><img src="./images/icons/icon-p.svg" alt="Lolypop Icon"> "Hello! I am a chef turned junior
+        frontend developer
         with a
         passion for coding and solving problems
         that matter and to create awesome and meaningful products for people to love. ❤️ " </p>
     </div>
     <!-- TECH -->
     <section class="tech">
-      <h2 class="section-titles">TECH</h2>
-      <h3 class="tech-content">
-        HTML, CSS, Flexbox, JavaScript, Responsive Design, React, React Hooks, Redux, Node.js, Mongo DB, Figma, Web
+      <h2 class="section-titles" tabindex="0">TECH</h2>
+      <h3 class="tech-content" tabindex="0">
+        HTML, CSS, Flexbox, <span>JavaScript,</span> Responsive Design,<span> React, React Hooks, Redux,</span> Node.js,
+        Mongo DB, Figma, Web
         Accessibility, API:s, Mob-programming, Pair-programming, Github.
       </h3>
     </section>
     <!-- FEATURED PROJECTS -->
     <section class="feature-projects">
-      <h2 class="section-titles">FEATURED PROJECTS</h2>
+      <h2 class="section-titles" tabindex="0">FEATURED PROJECTS</h2>
       <div class="my-projects">
-        <div class="cards">
-          <h3>Zomato Review Clone</h3>
+        <div class="cards" tabindex="0">
           <a href="https://zomato-review-clone.netlify.app">
-            <img src="./images/cards/zomato-clone.png" alt="Zomato Site Preview Picture">
+            <img src="./images/cards/zomato-clone.png" alt="Zomato Site Preview Picture" tabindex="0" role="button"
+              aria-pressed="false" aria-label="Zomato Clone Site" target="_blank" rel="noreferrer">
           </a>
-          <p>A website built using the Zomato API on burger restaurants in Sydney and sorts the restaurants on price and
-            ratings. <a class="git-link" href="https://github.com/karanmann/project-food.git">>></a></p>
+          <p class="image-overlay"></p>
+          <p><span class="project-title" tabindex="0">ZOMATO REVIEW CLONE. </span> A website built using the Zomato API
+            on burger
+            restaurants in Sydney and
+            sorts the restaurants on price and ratings. <a class="git-link"
+              href="https://github.com/karanmann/project-food.git" tabindex="0">>></a></p>
           <div class="project-tech">
             <div>HTML</div>
             <div>CSS</div>
@@ -68,16 +80,20 @@
             <div>Flexbox</div>
             <div>MOB-Programming</div>
             <div>Github</div>
-            <div>DOM</div>
             <div>API:s</div>
+            <div>DOM</div>
           </div>
         </div>
         <div class="cards">
-          <h3>Pizza Bot</h3>
           <a href="https://pizzabotmilano.netlify.app"><img src="./images/cards/pizza-bot.png"
-              alt="Pizza Bot Preview Image"></a>
-          <p>An interactive Pizzabot to order pizzas as well as calculate its total price and time taken to cook. <a
-              class="git-link" href="https://github.com/karanmann/project-pizza-bot.git">>></a></p>
+              alt="Pizza Bot Preview Image" tabindex="0" role="button" aria-pressed="false" aria-label="Pizzabot"
+              target="_blank" rel="noreferrer"></a>
+          <p class="image-overlay"></p>
+          <p><span class="project-title" tabindex="0">PIZZA BOT. </span> An interactive Pizzabot to order pizzas as well
+            as calculate
+            its total price and
+            time taken to cook. <a class="git-link" href="https://github.com/karanmann/project-pizza-bot.git"
+              tabindex="0">>></a></p>
           <div class="project-tech">
             <div>HTML</div>
             <div>CSS</div>
@@ -89,13 +105,16 @@
           </div>
         </div>
         <div class="cards">
-          <h3>Weather App</h3>
-          <a href="https://zomato-review-clone.netlify.app">
-            <img src="./images/cards/weather-app.png" alt="Weather Site Preview Picture">
+          <a href="https://vishwa-mausam.netlify.app/">
+            <img src="./images/cards/weather-app.png" alt="Weather Site Preview Picture" tabindex="0" role="button"
+              aria-pressed="false" aria-label="Weather App" target="_blank" rel="noreferrer">
           </a>
-          <p>A weather app that fetches data from Open Weather API and updates the local weather in stockholm along with
+          <p class="image-overlay"></p>
+          <p><span class="project-title" tabindex="0">WEATHER APP. </span> A weather app that fetches data from Open
+            Weather API and
+            updates the local weather in stockholm along with
             the forecast for the next five days as well as the icon as per the current weather. <a class="git-link"
-              href="https://github.com/karanmann/project-weather-app.git">>></a></p>
+              href="https://github.com/karanmann/project-weather-app.git" tabindex="0">>></a></p>
           <div class="project-tech">
             <div>HTML</div>
             <div>CSS</div>
@@ -107,12 +126,13 @@
           </div>
         </div>
         <div class="cards">
-          <h3>Business Site</h3>
           <a href="https://business-adventure.netlify.app">
-            <img src="./images/cards/business-site.png" alt="Business Site Preview Image">
+            <img src="./images/cards/business-site.png" alt="Business Site Preview Image" tabindex="0" role="button"
+              aria-pressed="false" aria-label="Weather App" target="_blank" rel="noreferrer">
           </a>
-          <p>A business site with a form and and FAQ accordion <a class="git-link"
-              href="https://github.com/karanmann/project-business-site.git">>></a></p>
+          <p class="image-overlay"></p>
+          <p><span class="project-title" tabindex="0">BUSINESS SITE. </span>A business site with a form and and FAQ
+            accordion <a class="git-link" href="https://github.com/karanmann/project-business-site.git">>></a></p>
           <div class="project-tech">
             <div>HTML</div>
             <div>CSS</div>
@@ -123,12 +143,15 @@
           </div>
         </div>
         <div class="cards">
-          <h3>C-L-U-E-D-O</h3>
           <a href="https://gettheclue.netlify.app">
-            <img src="./images/cards/cluedo.png" alt="Cluedo Preview Picture">
+            <img src="./images/cards/cluedo.png" alt="Cluedo Preview Picture" tabindex="0">
           </a>
-          <p>A clone of the cludo game which generated and displays random murderers, weapons and crime scenes. <a
-              class="git-link" href="https://github.com/karanmann/project-cluedo.git">>></a></p>
+          <p class="image-overlay"></p>
+          <p><span class="project-title" tabindex="0">C-L-U-E-D-O. </span> A clone of the cludo game which generated and
+            displays
+            random murderers, weapons and
+            crime scenes. <a class="git-link" href="https://github.com/karanmann/project-cluedo.git" tabindex="0">>></a>
+          </p>
           <div class="project-tech">
             <div>HTML</div>
             <div>CSS</div>
@@ -139,12 +162,16 @@
           </div>
         </div>
         <div class="cards">
-          <h3>News Site</h3>
-          <a href="https://gamezonee.netlify.app">
-            <img src="./images/cards/game-site.png" alt="Zomato Site Preview Picture">
+          <div class="image"></div>
+          <a href="https://gamezonee.netlify.app" tabindex="0">
+            <img src="./images/cards/game-site.png" alt="Gamezone Site Preview Picture">
           </a>
-          <p>A news site for game enthusiasts. This was my first project and and is very close to my heart as I love
-            games. <a class="git-link" href="https://github.com/karanmann/project-news-site.git">>></a></p>
+          <p class="image-overlay"></p>
+          <p><span class="project-title" tabindex="0">NEWS SITE. </span> A news site for game enthusiasts. This was my
+            first project
+            and and is very close to my
+            heart as I love
+            games. <a class="git-link" href="https://github.com/karanmann/project-news-site.git" tabindex="0">>></a></p>
           <div class="project-tech">
             <div>HTML</div>
             <div>CSS</div>
@@ -154,12 +181,13 @@
           </div>
         </div>
       </div>
+      <h3>OTHER PROJECTS ....</h3>
     </section>
     <!-- MY THOUGHTS ABOUT CODE -->
     <section class="my-thought-about-code">
       <h2 class="section-titles">MY THOUGHTS ABOUT CODE</h2>
       <div>
-        <div class="external-links">
+        <div class="external-links" tabindex="0">
           <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6720014273101266944" height="400"
             width="400" allowfullscreen="" title="Embedded post from LinkedIN"></iframe>
         </div>
@@ -173,59 +201,70 @@
     </section>
     <!-- SKILLS -->
     <section class="skills">
-      <h2 class="section-titles">SKILLS</h2>
+      <h2 class="section-titles" tabindex="0">SKILLS</h2>
       <div class="divided-skills">
         <div class="skill-code coding-skills">
-          <h3>CODE</h3>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>JavaScript ES6</p>
-          <p>Github</p>
+          <h3 tabindex="0">CODE</h3>
+          <p tabindex="0">HTML5</p>
+          <p tabindex="0">CSS3</p>
+          <p tabindex="0">JavaScript ES6</p>
+          <p tabindex="0">Github</p>
         </div>
         <div class="skill-toolbox coding-skills">
-          <h3>TOOLBOX</h3>
-          <p>Visual Studio Code</p>
-          <p>Terminal</p>
-          <p>Figma</p>
-          <p>StackOverflow</p>
-          <p>Slack</p>
+          <h3 tabindex="0">TOOLBOX</h3>
+          <p tabindex="0">Visual Studio Code</p>
+          <p tabindex="0">Terminal</p>
+          <p tabindex="0">Figma</p>
+          <p tabindex="0">StackOverflow</p>
+          <p tabindex="0">Slack</p>
         </div>
         <div class="other-toolbox coding-skills">
-          <h3>OTHER</h3>
-          <p>Agile Methodology</p>
-          <p>Pair-programming</p>
-          <p>Mob-programming</p>
-          <p>Web Accessibility</p>
-          <p>Concept Development</p>
+          <h3 tabindex="0">OTHER</h3>
+          <p tabindex="0">Agile Methodology</p>
+          <p tabindex="0">Pair-programming</p>
+          <p tabindex="0">Mob-programming</p>
+          <p tabindex="0">Web Accessibility</p>
+          <p tabindex="0">Concept Development</p>
         </div>
         <div class="upcoming-toolbox coding-skills">
-          <h3>UPCOMING</h3>
-          <p>React</p>
-          <p>React Hooks</p>
-          <p>Redux</p>
-          <p>Node.js</p>
-          <p>Mongo DB</p>
-          <p>SASS</p>
+          <h3 tabindex="0">UPCOMING</h3>
+          <p tabindex="0">React</p>
+          <p tabindex="0">React Hooks</p>
+          <p tabindex="0">Redux</p>
+          <p tabindex="0">Node.js</p>
+          <p tabindex="0">Mongo DB</p>
+          <p tabindex="0">SASS</p>
 
         </div>
       </div>
     </section>
     <!-- FOR MORE -->
     <section class="for-more">
-      <h2 class="section-titles">FOR MORE</h2>
-      <div class="footer-more">
-        <a href="https://www.linkedin.com/in/karanmann84/"><img src="./images/icons/linkedin-red.svg"
-            alt="Link to LinkedIN"></a>
-        <a href="https://github.com/karanmann"><img src="./images/icons/github-red.svg" alt="Link to Github"></a>
-        <a href="https://stackoverflow.com/users/14064949/karan-mann"><img src="./images/icons/stackoverflow-red.svg"
-            alt="Link to stackoverflow"></a>
+      <h2 class="section-titles" tabindex="0">FOR MORE</h2>
+      <div class="icon-more">
+        <div class="icon-more-link">
+          <a href="https://www.linkedin.com/in/karanmann84/"><img src="./images/icons/linkedin-red.svg"
+              alt="Link to LinkedIN"></a>
+          <p>LINKEDIN</p>
+        </div>
+        <div class="icon-more-link">
+          <a href="https://github.com/karanmann"><img src="./images/icons/github-red.svg" alt="Link to Github"></a>
+          <p>GITHUB</p>
+        </div>
+        <div class="icon-more-link">
+          <a href="https://stackoverflow.com/users/14064949/karan-mann"><img src="./images/icons/stackoverflow-red.svg"
+              alt="Link to stackoverflow"></a>
+          <p>STACKOVERFLOW</p>
+        </div>
+
       </div>
     </section>
   </main>
   <footer>
-    <h3>CONTACT</h3>
-    <p>Karan Mann</p>
-    <p>karan.mann@outlook.com</p>
+    <h3 tabindex="0">CONTACT</h3>
+    <p tabindex="0">Karan Mann</p>
+    <p tabindex="0">+46 (0) 70 225 77 72</p>
+    <p tabindex="0">karan.mann@outlook.com</p>
   </footer>
   <script src="./script.js"></script>
 </body>
