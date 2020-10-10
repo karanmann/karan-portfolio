@@ -178,7 +178,7 @@ body, html {
   width: 300px;
 }
 .cards {
-  width: 70%
+  width: 70%;
   padding: 20px
 }
 
@@ -188,17 +188,22 @@ body, html {
 }
 
 /* my thought about code */
+
 .my-thought-about-code{
  padding: 20px 0px;
 }
+
 .external-links {
   padding-top: 20px;
 }
 
 .my-thought-about-code h2 {
-  margin: 0 5vw
+  margin: 0 5vw;
 }
 
+.external-links {
+  border: 0px;
+}
 /* my skills */
 .skills {
   background-color: rgba(196, 196, 196, 0.2);
