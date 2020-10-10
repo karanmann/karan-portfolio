@@ -168,7 +168,7 @@ body, html {
 .my-projects{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 5px;
 }
@@ -189,11 +189,11 @@ body, html {
 }
 
 .cards img {
-  width: 300px;
+  width: 300PX ;
 }
 
 .cards p {
-  text-align: justify;
+  text-align: center;
 }
 
 .cards p span {
@@ -202,8 +202,10 @@ body, html {
 }
 
 .cards {
-  width: 70%;
-  padding: 20px
+  width: 80%;
+  padding: 20px;
+  padding-left: 37px;
+  justify-content: center;
 }
 
 .cards:hover {
@@ -226,8 +228,13 @@ body, html {
 }
 
 .external-links {
-  border: 0px;
+  border: 2px;
 }
+
+.linkedin-article {
+  width: 60%;
+}
+
 /* my skills */
 .skills {
   background-color: rgba(196, 196, 196, 0.2);
@@ -291,6 +298,7 @@ body, html {
   justify-content: space-evenly;
 }
 
+
 /* footer */
 footer {
   background-color: rgb(8, 70, 106);
@@ -330,6 +338,12 @@ footer {
 
   .feature-projects h2 {
     margin: 0 30vw
+  }
+  .cards {
+    width: 80%;
+    padding: 20px;
+    padding-left: 77px;
+    justify-content: center;
   }
 
   .my-thought-about-code h2 {
@@ -430,6 +444,6 @@ footer {
   }
 
   .cards {
-    width: 30%;
+    width: 25%;
   }
 }
