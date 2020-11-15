@@ -231,7 +231,7 @@ html {
   margin: 0 5vw;
 }
 
-.chef-droid {
+.chef-droid-image {
   padding-top: 20px;
   width: 70%;
 }
@@ -239,6 +239,13 @@ html {
 .chef-droid-text {
   text-align: justify;
   padding: 0px 40px;
+}
+
+.article-title {
+  font-weight: 900;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 43px;
 }
 
 /* my skills */
@@ -429,17 +436,17 @@ footer {
   .chef-droid-thought {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: baseline;
   }
-  .chef-droid {
+  .chef-droid-image {
     padding-top: 20px;
-    width: 30%;
+    width: 500px;
+    padding-left: 100px;
+    align-items: baseline;
   }
 
   .chef-droid-text {
-    text-align: justify;
-    width: 400px;
+    margin-right: 50px;
   }
 
   .skills h2 {
