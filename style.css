@@ -1,6 +1,7 @@
-body, html {
+body,
+html {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 20px;
 }
@@ -22,7 +23,7 @@ body, html {
 }
 
 .my-name {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   letter-spacing: 5px;
   color: white;
@@ -33,8 +34,8 @@ body, html {
   color: blanchedalmond;
 }
 
-.job-title{
-  font-family: 'Roboto', sans-serif;
+.job-title {
+  font-family: "Roboto", sans-serif;
   font-size: 70px;
   color: blanchedalmond;
 }
@@ -50,13 +51,13 @@ body, html {
   border: 3px solid white;
   display: inline-flex;
   position: absolute;
-  transform: translate(-50%, 0%)
+  transform: translate(-50%, 0%);
 }
 
-.social-links{
+.social-links {
   display: inline-flex;
   position: absolute;
-  transform: translate(-50%, -470%)
+  transform: translate(-50%, -470%);
 }
 
 .social-links a img {
@@ -64,7 +65,8 @@ body, html {
   padding: 20px;
   border: 3px solid white;
   border-radius: 60px;
-  margin: 20px
+  margin: 20px;
+  object-fit: scale-down;
 }
 
 .social-links img:hover {
@@ -74,29 +76,29 @@ body, html {
 
 .hero-contact ul {
   list-style-type: none;
-  padding: 10px 0px
+  padding: 10px 0px;
 }
 
-.hero-contact li a, .hero-contact li  {
+.hero-contact li a,
+.hero-contact li {
   text-decoration: none;
   font-size: 30px;
 }
 
 /* CONTENT */
 
-
 /* common styles */
-.tech, 
-.feature-projects, 
-.my-thought-about-code, 
-.skills, 
+.tech,
+.feature-projects,
+.my-thought-about-code,
+.skills,
 .for-more {
   display: flex;
   flex-direction: column;
 }
 
-.tech h2, 
-.feature-projects h2, 
+.tech h2,
+.feature-projects h2,
 .my-thought-about-code h2,
 .skills h2,
 .for-more h2 {
@@ -104,7 +106,7 @@ body, html {
   color: white;
   display: flex;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
   border-radius: 7px;
 }
@@ -112,42 +114,27 @@ body, html {
 /* introduction text */
 .introduction-text {
   background-color: rgba(196, 196, 196, 0.2);
-  padding : 0px 80px;
+  padding: 0px 80px;
   padding-top: 70px;
   padding-bottom: 20px;
 }
 
 /* tech */
-.tech{
-  padding : 20px 30px
+.tech {
+  padding: 20px 30px;
 }
 
 .tech h2 {
-  margin : 0 vw
+  margin: 0 vw;
 }
 
-.tech-content{
+.tech-content {
   word-spacing: 10px;
   font-size: 25px;
 }
 
 .git-link {
-  color: red
-}
-
-.project-tech {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  font-size: 9px
-}
-
-.project-tech div {
-  margin: 3px;
-  padding: 2px 2px;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #7dd1e0;
-  align-self: center
+  color: red;
 }
 
 .tech-content span {
@@ -156,16 +143,16 @@ body, html {
 
 /* featured projects */
 
-.feature-projects{
+.feature-projects {
   background-color: rgba(196, 196, 196, 0.2);
-  padding : 20px 0px
+  padding: 20px 0px;
 }
 
 .feature-projects h2 {
-  margin: 0 10vw
+  margin: 0 10vw;
 }
 
-.my-projects{
+.my-projects {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -178,29 +165,55 @@ body, html {
 }
 
 .my-projects h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
 }
 
 .feature-projects h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: red;
   font-size: 40px;
 }
 
 .cards img {
-  width: 300PX ;
+  width: 300px;
+}
+
+.card image:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
 }
 
 .cards p {
   text-align: center;
 }
 
-.cards p span {
+.project-title {
   color: red;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.project-content {
+  text-align: justify;
+  align-content: stretch;
+}
+.project-tech {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
+.project-tech div {
+  margin: 3px;
+  padding: 2px 2px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #7dd1e0;
+  align-self: center;
+}
+
+.project-image:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+}
 .cards {
   width: 80%;
   padding: 20px;
@@ -208,38 +221,31 @@ body, html {
   justify-content: center;
 }
 
-.cards:hover {
-  border-radius: 10px;
-  box-shadow: 5px 10px 10px rgb(91, 90, 90);
-}
-
 /* my thought about code */
 
-.my-thought-about-code{
- padding: 20px 0px;
-}
-
-.external-links {
-  padding-top: 20px;
+.my-thought-about-code {
+  padding: 20px 0px;
 }
 
 .my-thought-about-code h2 {
   margin: 0 5vw;
 }
 
-.external-links {
-  border: 2px;
+.chef-droid {
+  padding-top: 20px;
+  width: 70%;
 }
 
-.linkedin-article {
-  width: 60%;
+.chef-droid-text {
+  text-align: justify;
+  padding: 0px 40px;
 }
 
 /* my skills */
 .skills {
   background-color: rgba(196, 196, 196, 0.2);
   list-style-type: none;
-  padding : 20px 0px;
+  padding: 20px 0px;
 }
 
 .skills h2 {
@@ -253,22 +259,22 @@ body, html {
   flex-wrap: wrap;
 }
 
-.divided-skills h3{
+.divided-skills h3 {
   color: red;
 }
 
 .coding-skills {
-  width: 50%
+  width: 50%;
 }
 
 .divided-skills h3 {
   font-size: 20px;
-  font-family: 'Roboto', sans-serif
+  font-family: "Roboto", sans-serif;
 }
 
 /* for more */
-.for-more{
-  padding : 10px 0px;
+.for-more {
+  padding: 10px 0px;
   color: red;
 }
 
@@ -277,11 +283,12 @@ body, html {
 }
 
 .for-more img {
-  width : 50px;
-  border: 4px solid red;
+  width: 40px;
   padding: 20px;
+  border: 3px solid red;
   border-radius: 60px;
-  margin-top: 30px
+  margin: 20px;
+  object-fit: scale-down;
 }
 
 .icon-more-link p {
@@ -298,23 +305,22 @@ body, html {
   justify-content: space-evenly;
 }
 
-
 /* footer */
 footer {
   background-color: rgb(8, 70, 106);
   color: whitesmoke;
-  padding : 20px 0px
+  padding: 20px 0px;
 }
 
 /* all media queries */
 
 @media (min-width: 600px) {
-  .portfolio{
+  .portfolio {
     padding-top: 10px;
   }
 
   .hero-container {
-  height: 110vh;
+    height: 110vh;
   }
 
   .profile-pic {
@@ -323,21 +329,21 @@ footer {
     border: 3px solid white;
     display: inline-flex;
     position: absolute;
-    transform: translate(-50%,-10%)
+    transform: translate(-50%, -10%);
   }
 
-  .social-links{
+  .social-links {
     display: inline-flex;
     position: absolute;
     transform: translate(-50%, -390%);
   }
 
   .tech h2 {
-    margin : 0 35vw;
+    margin: 0 35vw;
   }
 
   .feature-projects h2 {
-    margin: 0 30vw
+    margin: 0 30vw;
   }
   .cards {
     width: 80%;
@@ -347,7 +353,7 @@ footer {
   }
 
   .my-thought-about-code h2 {
-    margin: 0 25vw
+    margin: 0 25vw;
   }
 
   .skills h2 {
@@ -382,18 +388,20 @@ footer {
     height: 70vh;
     text-align: left;
   }
- 
+
   .hero-text {
-    text-align:  left;
+    text-align: left;
   }
 
   .hero-contact {
     padding-left: 150px;
   }
-
-  .for-more{
+  .introduction-text-content {
+    padding: 0px 230px;
+  }
+  .for-more {
     display: flex;
-    padding : 40px 0px;
+    padding: 40px 0px;
   }
 
   .for-more h2 {
@@ -401,31 +409,51 @@ footer {
   }
 
   .tech h2 {
-    margin : 0 35vw;
+    margin: 0 35vw;
   }
+
+  .tech-content {
+    padding: 0px 230px;
+  }
+
   .tech {
     padding: 20px 100px;
   }
   .feature-projects h2 {
-    margin: 0 37vw
+    margin: 0 37vw;
   }
 
   .my-thought-about-code h2 {
-    margin: 0 33vw
+    margin: 0 33vw;
+  }
+  .chef-droid-thought {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .chef-droid {
+    padding-top: 20px;
+    width: 30%;
+  }
+
+  .chef-droid-text {
+    text-align: justify;
+    width: 400px;
   }
 
   .skills h2 {
     margin: 0 45vw;
   }
 
-  .my-projects{
+  .my-projects {
     display: flex;
     flex-direction: row;
   }
 
   .introduction-text {
     background-color: rgba(196, 196, 196, 0.2);
-    padding : 70px 80px
+    padding: 70px 80px;
   }
 
   .profile-pic {
@@ -434,10 +462,10 @@ footer {
     border: 3px solid white;
     display: inline-flex;
     position: absolute;
-    transform: translate(-60%, 20%)
+    transform: translate(-60%, 20%);
   }
 
-  .social-links{
+  .social-links {
     display: inline-flex;
     position: absolute;
     transform: translate(-60%, -150%);
