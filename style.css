@@ -70,8 +70,9 @@ html {
 }
 
 .social-links img:hover {
-  width: 50px;
-  border: 3px solid red;
+  width: 40px;
+  border: 4px solid red;
+  transition: 0.4s
 }
 
 .hero-contact ul {
@@ -88,6 +89,7 @@ html {
 /* CONTENT */
 
 /* common styles */
+
 .tech,
 .feature-projects,
 .my-thought-about-code,
@@ -95,9 +97,10 @@ html {
 .for-more {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.tech h2,
 .feature-projects h2,
 .my-thought-about-code h2,
 .skills h2,
@@ -106,9 +109,21 @@ html {
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   border-radius: 7px;
+}
+
+.title-container {
+  width: 300px;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  border-radius: 7px
 }
 
 /* introduction text */
@@ -122,10 +137,6 @@ html {
 /* tech */
 .tech {
   padding: 20px 30px;
-}
-
-.tech h2 {
-  margin: 0 vw;
 }
 
 .tech-content {
@@ -146,10 +157,6 @@ html {
 .feature-projects {
   background-color: rgba(196, 196, 196, 0.2);
   padding: 20px 0px;
-}
-
-.feature-projects h2 {
-  margin: 0 10vw;
 }
 
 .my-projects {
@@ -181,6 +188,7 @@ html {
 
 .card image:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  transition-delay: 0.2s;
 }
 
 .cards p {
@@ -202,7 +210,7 @@ html {
   letter-spacing: 1px;
 }
 
-.project-tech div {
+.project-tech p {
   margin: 3px;
   padding: 2px 2px;
   text-align: center;
@@ -225,10 +233,6 @@ html {
 
 .my-thought-about-code {
   padding: 20px 0px;
-}
-
-.my-thought-about-code h2 {
-  margin: 0 5vw;
 }
 
 .chef-droid-image {
@@ -303,8 +307,9 @@ html {
 }
 
 .for-more img:hover {
-  width: 60px;
+  width: 40px;
   border: 4px solid rgb(8, 70, 106);
+  transition: 0.2s;
 }
 
 .icon-more {
@@ -406,33 +411,17 @@ footer {
   .introduction-text-content {
     padding: 0px 230px;
   }
+
   .for-more {
     display: flex;
     padding: 40px 0px;
-  }
-
-  .for-more h2 {
-    margin: 0 43vw;
-  }
-
-  .tech h2 {
-    margin: 0 35vw;
   }
 
   .tech-content {
     padding: 0px 230px;
   }
 
-  .tech {
-    padding: 20px 100px;
-  }
-  .feature-projects h2 {
-    margin: 0 37vw;
-  }
 
-  .my-thought-about-code h2 {
-    margin: 0 33vw;
-  }
   .chef-droid-thought {
     display: flex;
     flex-direction: row;
@@ -447,10 +436,6 @@ footer {
 
   .chef-droid-text {
     margin-right: 50px;
-  }
-
-  .skills h2 {
-    margin: 0 45vw;
   }
 
   .my-projects {
