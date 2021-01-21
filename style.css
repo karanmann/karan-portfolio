@@ -229,6 +229,29 @@ html {
   justify-content: center;
 }
 
+.other-project {
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 0 20px
+}
+
+.other-project-icon {
+  border: 4px solid red;
+  height:30px;
+  border-radius:50px;
+  padding: 15px;
+  margin-top: 10px
+}
+.other-project-icon:hover {
+  border: 4px solid rgb(8, 70, 106)
+}
+
 /* my thought about code */
 
 .my-thought-about-code {
