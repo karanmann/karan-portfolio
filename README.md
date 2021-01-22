@@ -1,4 +1,4 @@
-# karan-portfolio
+# Karan's Portfolio
 
 The purpose of this project was to start wrapping everything up that I have done the past 8 weeks by building my very own portfolio.
 
